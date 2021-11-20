@@ -3,8 +3,9 @@ package error_test
 import (
 	"database/sql"
 	"fmt"
-	"github.com/pkg/errors"
 	"testing"
+
+	"github.com/pkg/errors"
 )
 
 //应该wrap,因为根据业务来说,一般对数据源的操作错误都会导致业务中断,无法向下进行,所以只能抛出到最上层
